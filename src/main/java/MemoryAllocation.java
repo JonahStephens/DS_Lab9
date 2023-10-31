@@ -42,5 +42,9 @@ public class MemoryAllocation
     {
 	return "Alloc "+owner+" at "+pos+" for "+len; 
     }
+    
+    public boolean equals(MemoryAllocation other) {
+    	return this.owner == other.owner && this.len == other.len && this.pos == other.pos;
+    }
 
 }
